@@ -21,5 +21,18 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-multi-api',
+      options: {
+        apis: [
+          {
+            prefix: 'Newsletter',
+            baseUrl: 'http://localhost:4000/api/',
+            endpoints: ['newsletters'],
+            //method: 'OPTIONS',
+          },
+        ],
+      },
+    },
   ],
 };
