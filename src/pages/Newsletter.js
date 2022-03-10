@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import pic1 from '../assets/images/01.jpg';
+import { format } from 'date-fns';
 
 const NewsletterPage = ({ data }) => {
   const newsletters = data.allNewsletterNewsletters.nodes[0].data;
@@ -57,7 +58,17 @@ const NewsletterPage = ({ data }) => {
                     }
                   >
                     <strong>{newsletter.name}</strong>
-                    <span> - {newsletter.publish_date}</span>
+                    <span>
+                      {' '}
+                      -{' '}
+                      <i>
+                        published at,{' '}
+                        {format(
+                          new Date(newsletter.publish_date),
+                          'dd MMMM yyyy'
+                        )}
+                      </i>
+                    </span>
                   </Link>
                 </li>
               );
