@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter phantom', // <title>
-  manifestName: 'Phantom',
+  siteTitle: 'Cyphraium', // <title>
+  manifestName: 'Cyphraium',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',

@@ -6,6 +6,8 @@
 
 // You can delete this file if you're not using it
 const path = require('path');
+const fs = require('fs');
+const newsletterFeed = require('./misc/createNewsletterFeed');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -74,17 +76,12 @@ exports.createPages = ({ graphql, actions }) => {
           newName = newName.replace(/ /g, '_');
           const path = `/newsletter/${newName}`;
 
-          /*
-          feed.addItem({
-            title: node.frontmatter.title,
-            id: `https://ulisesavila.com/${
-              node.frontmatter.tag + '/' + node.frontmatter.path
-            }`,
-            link: `https://ulisesavila.com/${
-              node.frontmatter.tag + '/' + node.frontmatter.path
-            }`,
-            date: new Date(node.frontmatter.date),
-            content: node.html,
+          newsletterFeed.addItem({
+            title: newName,
+            id: `https://ulisesavila.com/${'newsletter/' + newName}`,
+            link: `https://ulisesavila.com/${'newsletter/' + newName}`,
+            date: new Date(node.publish_date),
+            content: node.htmlContent,
             author: [
               {
                 name: 'Ulises Avila',
@@ -93,7 +90,7 @@ exports.createPages = ({ graphql, actions }) => {
               },
             ],
           });
-*/
+
           createPage({
             path,
             component: postTemplate,
@@ -124,6 +121,22 @@ exports.createPages = ({ graphql, actions }) => {
           console.log('Hello World > helloworld.txt');
         });
         */
+        fs.writeFile(
+          'public/newsletter-atom.xml',
+          newsletterFeed.atom1(),
+          function (err) {
+            if (err) return console.log(err);
+            console.log('Hello World > helloworld.txt');
+          }
+        );
+        fs.writeFile(
+          'public/newsletter-feed.xml',
+          newsletterFeed.rss2(),
+          function (err) {
+            if (err) return console.log(err);
+            console.log('Hello World > helloworld.txt');
+          }
+        );
       })
     );
   });
