@@ -2,13 +2,13 @@ const Feed = require('feed').Feed;
 
 const feed = new Feed({
   title: "Cyphraium's Web3 newsletter",
-  description: 'This is my personal feed!',
+  description: 'Feed with the latest news about web3 and blockchain topics',
   id: 'https://cyphraium.com/',
   link: 'https://cyphraium.com/',
   language: 'en', // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
   image: 'http://cyphraium.com/image.png',
   favicon: 'http://cyphraium.com/favicon.ico',
-  copyright: 'All rights reserved Cyphraium & UlisesAC4',
+  copyright: 'All rights reserved Cyphraium',
   updated: new Date(),
   // optional, default = 'Feed for Node.js'
   feedLinks: {
