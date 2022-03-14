@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="inner">
         <ContactForm />
         <section>
-          <h2>Follow</h2>
+          {/*<h2>Follow</h2>*/}
           <ul className="icons">
             {config.socialLinks.map((social) => {
               const { icon, name, url } = social;
