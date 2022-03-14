@@ -11,7 +11,7 @@ const NewsletterPage = ({ data }) => {
     <Layout>
       <div id="main">
         <div className="inner">
-          <h1>Generic Page</h1>
+          <h1>Newsletter</h1>
           <span className="image main">
             <img src={pic1} alt="" />
           </span>
