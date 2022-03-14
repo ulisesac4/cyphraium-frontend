@@ -1,10 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import pic1 from '../assets/images/01.jpg';
 
 const NewsletterTemplate = ({ pageContext }) => {
-  console.log('in context', pageContext);
   return (
     <Layout>
       <div id="main">

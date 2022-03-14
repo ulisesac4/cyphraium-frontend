@@ -48,15 +48,15 @@ exports.createPages = ({ graphql, actions }) => {
 
           newsletterFeed.addItem({
             title: newName,
-            id: `https://ulisesavila.com/${'newsletter/' + newName}`,
-            link: `https://ulisesavila.com/${'newsletter/' + newName}`,
+            id: `https://cyphraium.com/${'newsletter/' + newName}`,
+            link: `https://cyphraium.com/${'newsletter/' + newName}`,
             date: new Date(node.publish_date),
             content: node.htmlContent,
             author: [
               {
                 name: 'Ulises Avila',
                 email: 'ulisesavila04@gmail.com',
-                link: 'https://ulisesavila.com',
+                link: 'https://cyphraium.com',
               },
             ],
           });

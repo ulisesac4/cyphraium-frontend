@@ -41,13 +41,16 @@ class Layout extends Component {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Phantom' },
-                { name: 'keywords', content: 'site, web' },
+                { name: 'description', content: 'Cyphraium' },
+                {
+                  name: 'keywords',
+                  content: 'web3 jobs, jobs, eth, bit, solana',
+                },
               ]}
             >
               <html lang="en" />
