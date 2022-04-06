@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SubscribeForm from '../components/SubscribeForm';
 import Layout from '../components/Layout';
 
 import pic1 from '../assets/images/01.jpg';
@@ -17,186 +17,16 @@ const IndexPage = () => (
       <div className="inner">
         <header>
           <h1>
-            This is Phantom, a free, fully responsive gatsby starter
+            This is Cyphraium, your hub for Web3 news.
             <br />
           </h1>
+          <SubscribeForm />
           <p>
-            Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit
-            amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis
-            venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem
-            ipsum dolor sit amet nullam dolore.
+            You can subscribe to our weekly newsletter with the above form, or
+            you can go to the <Link>Newsletter</Link> page to read online our
+            own issues or get to know our ATOM and RSS feeds.
           </p>
         </header>
-        <section className="tiles">
-          <article className="style1">
-            <span className="image">
-              <img src={pic1} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Magna</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style2">
-            <span className="image">
-              <img src={pic2} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Lorem</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style3">
-            <span className="image">
-              <img src={pic3} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Feugiat</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style4">
-            <span className="image">
-              <img src={pic4} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Tempus</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style5">
-            <span className="image">
-              <img src={pic5} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Aliquam</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style6">
-            <span className="image">
-              <img src={pic6} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Veroeros</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style2">
-            <span className="image">
-              <img src={pic1} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Ipsum</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style3">
-            <span className="image">
-              <img src={pic2} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Dolor</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style1">
-            <span className="image">
-              <img src={pic3} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Nullam</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style5">
-            <span className="image">
-              <img src={pic4} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Ultricies</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style6">
-            <span className="image">
-              <img src={pic5} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Dictum</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-          <article className="style4">
-            <span className="image">
-              <img src={pic6} alt="" />
-            </span>
-            <Link to="/Generic">
-              <h2>Pretium</h2>
-              <div className="content">
-                <p>
-                  Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros
-                  et feugiat.
-                </p>
-              </div>
-            </Link>
-          </article>
-        </section>
       </div>
     </div>
   </Layout>
