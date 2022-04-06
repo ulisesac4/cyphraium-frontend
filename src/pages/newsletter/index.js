@@ -9,7 +9,7 @@ import jsScript from './submitForm';
 const NewsletterPage = ({ data }) => {
   const newsletters = data.allNewsletterNewsletters.nodes[0].data;
   console.log(newsletters);
-  const styleForm = `#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;}`;
+  const styleForm = `#mc_embed_signup{background:#f6f6f6; clear:left; font:14px Helvetica,Arial,sans-serif;}`;
   return (
     <Layout>
       <Helmet>
@@ -46,6 +46,9 @@ const NewsletterPage = ({ data }) => {
               >
                 <div id="mc_embed_signup_scroll">
                   <h2>Subscribe</h2>
+                  <p style={{ color: '#a6a6a6' }}>
+                    This is a newsletter about Web3 news
+                  </p>
                   <div className="indicates-required">
                     <span className="asterisk">*</span> indicates required
                   </div>
@@ -90,13 +93,17 @@ const NewsletterPage = ({ data }) => {
                   </div>
                   <div className="optionalParent">
                     <div className="clear foot">
-                      <input
-                        type="submit"
-                        value="Subscribe"
-                        name="subscribe"
-                        id="mc-embedded-subscribe"
-                        className="button"
-                      />
+                      <ul className="actions">
+                        <li>
+                          <input
+                            type="submit"
+                            value="Subscribe"
+                            name="subscribe"
+                            id="mc-embedded-subscribe"
+                            className="primary"
+                          />
+                        </li>
+                      </ul>
                       <p className="brandingLogo">
                         <a
                           href="http://eepurl.com/hY21Kf"
@@ -107,6 +114,11 @@ const NewsletterPage = ({ data }) => {
                       </p>
                     </div>
                   </div>
+                  <p style={{ color: '#a6a6a6' }}>
+                    It features news, tutorials and new projects. If you are an
+                    enthusiast about Web3 I am sure you will find important
+                    information here.
+                  </p>
                 </div>
               </form>
             </div>
