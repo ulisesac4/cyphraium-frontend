@@ -84,19 +84,38 @@ const SponsorPage = () => {
             newsletter:
           </p>
           <h4> Example for a product/service </h4>
-          If you’re curious how it looks, previous advertisements for Papertrail
-          (issue #35) and Datadog (issue #52) can give a good idea. The format
-          is like this: Datadog - Application monitoring done right With
-          Datadog, you can see all your data in one place. See Amazon stats on
-          your servers, as well as detailed numbers of your PostgreSQL,
-          Elasticsearch, Node & other applications. Sign up for a free 14- day
-          trial. (Sponsored) The limitations for the ad copy are: Title: 45
-          characters (normal capitalization) Paragraph: 300 characters URL: no
-          limits, you’re free to choose the URL My goal is to help you sell your
-          product or service, if you are unsure how to create a good
-          subject/paragraph I’ll be more than happy to help you.
+          <p>A Product and Service look like this:</p>
+          <blockquote>
+            <strong>Datadog - Application monitoring done right</strong>
+            <p>
+              With Datadog, you can see all your data in one place. See Amazon
+              stats on your servers, as well as detailed numbers of your
+              PostgreSQL, Elasticsearch, Node & other applications. Sign up for
+              a free 14- day trial.
+            </p>
+          </blockquote>
+          <p>
+            A Product and Service format is straight forward, but keep in mind
+            the next things:
+          </p>
+          <ul>
+            <li>Title: No more than 60 characters</li>
+            <li>
+              Paragraph: 300 characters. The better you can explain your service
+              like a tweet the better
+            </li>
+
+            <li>
+              URL: The url will be in the title of your posting, you can use any
+              link you need, you can even put params on it
+            </li>
+          </ul>
+          <p>
+            I unfortunately cannot do Copy, so I will not be able to suggest
+            better wording in your posting
+          </p>
           <h4> Example for a job posting </h4>
-          <p>The format looks like this:</p>
+          <p>A Job Posting looks like this:</p>
           <blockquote>
             <strong>Marketing Advisor in Cyphraium</strong>
             <p>
