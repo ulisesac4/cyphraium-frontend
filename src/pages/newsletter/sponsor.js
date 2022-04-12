@@ -86,12 +86,10 @@ const SponsorPage = () => {
           <h4> Example for a product/service </h4>
           <p>A Product and Service look like this:</p>
           <blockquote>
-            <strong>Datadog - Application monitoring done right</strong>
+            <strong>Scheduly - Calendar done right</strong>
             <p>
-              With Datadog, you can see all your data in one place. See Amazon
-              stats on your servers, as well as detailed numbers of your
-              PostgreSQL, Elasticsearch, Node & other applications. Sign up for
-              a free 14- day trial.
+              With Scheduly never miss an appointment, with an app in all the
+              platforms never miss a call or a meeting.
             </p>
           </blockquote>
           <p>
