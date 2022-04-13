@@ -27,7 +27,7 @@ module.exports = {
         apis: [
           {
             prefix: 'Newsletter',
-            baseUrl: 'http://localhost:4000/api/',
+            baseUrl: 'https://api.cyphraium.com/api/',
             endpoints: ['newsletters'],
             //method: 'OPTIONS',
           },
